@@ -9,4 +9,8 @@ jobs:
   update_dependencies:
     runs-on: ubuntu-latest
     steps:
-      - uses: saritasa-nest/saritasa-github-actions/.github/actions/updates-dependencies-python@v2.3
+      - name: Local settings
+        id: local-settings
+        with:
+          python-version: 3.10
+      - uses: OttoAndrey/test-actions/.github/actions/updates-dependencies-python@

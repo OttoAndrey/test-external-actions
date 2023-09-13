@@ -6,10 +6,7 @@ on:
     branches: [ main, develop ]
 
 jobs:
-  update_deps:
-    name: Update requirements
+  update_dependencies:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
-        with:
-          repository: saritasa-nest/saritasa-github-actions
+      - uses: saritasa-nest/saritasa-github-actions/.github/actions/updates-dependencies-python

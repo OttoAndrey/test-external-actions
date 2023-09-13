@@ -5,13 +5,11 @@ on:
   push:
     branches: [ main, develop ]
 
+env:
+  PYTHON_VERSION: 3.10
+
 jobs:
   update_dependencies:
     runs-on: ubuntu-latest
     steps:
-      - name: Local settings
-        uses: actions/checkout@v4
-        id: local-settings
-        with:
-          python-version: 3.10
       - uses: OttoAndrey/test-actions/.github/actions/updates-dependencies-python@v1.0.0

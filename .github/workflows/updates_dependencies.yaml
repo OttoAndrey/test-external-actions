@@ -12,4 +12,4 @@ jobs:
   update_dependencies:
     runs-on: ubuntu-latest
     steps:
-      - uses: OttoAndrey/test-actions/.github/actions/updates-dependencies-python@v1.0.0
+      - uses: OttoAndrey/test-actions/.github/actions/updates-dependencies-python@v1.0.1
